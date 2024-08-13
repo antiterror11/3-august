@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(9, 9, 157);
+    color: white;
+    display: flex;
+    text-align: center;
+    font-size: large;
+}
+.coding-word{
+    width: 50%;
+}
+.bar{
+    display: none;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.cards{
+    display: flex;
+    margin: 10px 100px;
+    height: 100vh;
+}
+.left-card{
+    color: white;
+    width: 20%;
+    font-size: small;
+    margin-top: 18px;
+}
+.left-card h2{
+    padding: 6px;
+    margin-bottom: 10px;
+    background-color: rgb(9, 9, 157);
+}
+.center-card{
+    width: 60%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.center-card h1{
+    color: rgb(9, 9, 157);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.right-card{
+    width: 20%;
+    background-color: rgb(9, 9, 157);
+    text-align: center;
+    color: white;
+    height: 400px;
+}
+.right-card h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: rgb(9, 9, 157);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+@media (max-width: 760px) {
+    .menu{
+        display: none;
+    }
+    .bar{
+        display: block;
+        width: 30%;
+    }
+    .coding-word{
+        width: 70%;
+        font-size: 20px;
+    }
+    .cards{
+        flex-wrap: wrap;
+        margin: 10px;
+        height: 170vh;
+    }
+    .left-card{
+        width: 40%;
+    }
+    .center-card{
+        width: 50%; 
+    }
+    .right-card{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .menu{
+        display: none;
+    }
+    .bar{
+        display: block;
+        width: 30%;
+    }
+    .cards{
+        flex-wrap: wrap;
+        height: 200vh;
+    }
+    .left-card{
+        width: 100%;
+    }
+    .center-card{
+        width: 100%;
+    }
+    .right-card{
+        width: 100%;
+    }
+}
